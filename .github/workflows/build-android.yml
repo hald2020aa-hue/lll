@@ -40,9 +40,9 @@ jobs:
       - name: Build Debug APK
         run: |
           if [ -f "./gradlew" ]; then
-            ./gradlew :app:assembleDevApi28Debug --stacktrace
+            ./gradlew :app:assembleDevApi26Debug --stacktrace
           else
-            gradle :app:assembleDevApi28Debug --stacktrace
+            gradle :app:assembleDevApi26Debug --stacktrace
           fi
 
       - name: Upload APK artifact
